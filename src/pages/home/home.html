@@ -7,8 +7,20 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-item>
+  <ion-label>ssid</ion-label>
+  <ion-input [(ngModel)]="ssid"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>password</ion-label>
+  <ion-input [(ngModel)]="password"></ion-input>
+</ion-item>
+
+<button ion-button icon-start block (click)="onButton()">
+  <ion-icon name='key'></ion-icon>
+  smart config!
+</button>
+
+
 </ion-content>
